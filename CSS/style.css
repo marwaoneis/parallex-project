@@ -149,12 +149,31 @@ header {
   margin-left: 10px;
 }
 
+.fish-fact-1,
 .fish-fact {
   position: absolute;
   font-size: 100%;
+}
+.fish-fact-1 {
   width: 60%;
 }
 
+.fish-fact {
+  width: 50%;
+  left: 120px;
+}
 .deepness {
-  font-size: 4.5rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.footer {
+  position: relative;
+  font-size: 85px;
+  text-align: center;
+  color: white;
+  padding-top: 135px;
+  margin-top: 130px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px white;
 }
