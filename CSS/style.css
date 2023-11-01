@@ -70,6 +70,7 @@ header {
   height: 66%;
 }
 
+
 .fish-name {
   font-weight: bold;
 }
@@ -94,6 +95,7 @@ header {
   object-fit: cover;
   z-index: -2;
 }
+
 .sea-background {
   position: absolute;
   right: -20rem;
@@ -111,10 +113,21 @@ header {
   transform: translateZ(-5px) scale(2);
 }
 
+.left-box{
+  transform: translateZ(-5px) scale(1.5);
+}
+.right-box{
+  transform: translateZ(-3px) scale(1.3);
+  
+}
+
+.level{
+    transform-style: preserve-3d;
+    z-index: -2;
+}
 .left-box {
   display: flex;
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
