@@ -103,3 +103,10 @@ header {
   z-index: -1;
   top: 0.8rem;
 }
+
+.sun-foreground{
+  transform: translateZ(-5px) scale(1.5);
+}
+.clouds-foreground{
+  transform: translateZ(-5px) scale(2)
+}
