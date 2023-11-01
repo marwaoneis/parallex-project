@@ -119,6 +119,7 @@ header {
   align-items: center;
   gap: 5rem;
   padding-top: 15rem;
+  z-index: -2px;
 }
 
 .right-box {
