@@ -110,3 +110,40 @@ header {
 .clouds-foreground{
   transform: translateZ(-5px) scale(2)
 }
+
+.left-box{
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 15rem;
+}
+
+.fish{
+  max-height: 40%;
+  max-width: 40%;
+  margin-top: 10%;
+}
+.bubble{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.descriptive-bubble{
+  margin-left: 10px;
+}
+
+.fish-fact{
+  position: absolute;
+  font-size: 100%;
+  width: 70%;
+}
+
+.deepness{
+  font-size: 4.5rem;
+}
