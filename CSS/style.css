@@ -121,6 +121,16 @@ header {
   padding-top: 15rem;
 }
 
+.right-box{
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 15rem;
+}
+
 .fish{
   max-height: 40%;
   max-width: 40%;
@@ -141,7 +151,7 @@ header {
 .fish-fact{
   position: absolute;
   font-size: 100%;
-  width: 70%;
+  width: 60%;
 }
 
 .deepness{
