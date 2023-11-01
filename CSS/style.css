@@ -1,10 +1,10 @@
 h1 {
-  font-family: "Gambetta", serif;
+  font-family: sans-serif;
   font-size: 50px;
   max-width: 40ch;
-  color: white;
+  color: hwb(180 52% 0%);
   text-align: center;
-  text-shadow: 0 0 5px rgb(0, 0, 0);
+  text-shadow: 0 0 5px rgb(66, 66, 66);
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
@@ -65,9 +65,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   transform-style: preserve-3d;
   z-index: -1;
+  height: 66%;
 }
 
 .fish-name {
@@ -81,6 +81,11 @@ header {
   perspective: 10px;
 }
 
+.content {
+  padding-top: 150px;
+  margin-top: 150px;
+}
+
 .clouds-foreground,
 .sea-backgroud {
   position: absolute;
@@ -89,7 +94,10 @@ header {
   object-fit: cover;
   z-index: -2;
 }
-
+.sea-background {
+  position: absolute;
+  right: -20rem;
+}
 .sun-foreground {
   position: absolute;
   z-index: -1;
