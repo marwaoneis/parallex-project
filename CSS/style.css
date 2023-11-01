@@ -1,0 +1,159 @@
+h1 {
+  font-family: sans-serif;
+  font-size: 50px;
+  max-width: 40ch;
+  color: hwb(180 52% 0%);
+  text-align: center;
+  text-shadow: 0 0 5px rgb(66, 66, 66);
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 1s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 1s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 1s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 1s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 1s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+body {
+  background-color: rgb(166 209 227);
+}
+
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+  height: 66%;
+}
+
+.fish-name {
+  font-weight: bold;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.content {
+  padding-top: 150px;
+  margin-top: 150px;
+}
+
+.clouds-foreground,
+.sea-backgroud {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.sea-background {
+  position: absolute;
+  right: -20rem;
+}
+.sun-foreground {
+  position: absolute;
+  z-index: -1;
+  top: 0.8rem;
+}
+
+.sun-foreground {
+  transform: translateZ(-5px) scale(1.5);
+}
+.clouds-foreground {
+  transform: translateZ(-5px) scale(2);
+}
+
+.left-box {
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 15rem;
+}
+
+.right-box {
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 15rem;
+}
+
+.fish {
+  max-height: 40%;
+  max-width: 40%;
+  margin-top: 10%;
+}
+.bubble {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.descriptive-bubble {
+  margin-left: 10px;
+}
+
+.fish-fact {
+  position: absolute;
+  font-size: 100%;
+  width: 60%;
+}
+
+.deepness {
+  font-size: 4.5rem;
+}
